@@ -1,8 +1,16 @@
 # dsh-custom-splash
 
-给 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 加一段开屏动画：**每次启动随机播放一段视频**，播完自动淡出。
+给 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 加一段开屏动画：**每次启动从三段里随机播放一段**，播完自动淡出。
 
-![preview](docs/preview.png)
+![preview](docs/preview.jpg)
+
+上图就是随包的三段，从左到右各取一帧：
+
+| 文件 | 时长 | 码率 | 画面 |
+|---|---|---|---|
+| `assets/clip-1.mp4` | 8.06s | 2659 kbps | 闭眼半身特写，柔光星尘 |
+| `assets/clip-3.mp4` | 7.05s | 2951 kbps | 左侧 DEEPSEEK 大字 + 右侧脸部 + 数据流 |
+| `assets/clip-5.mp4` | 7.05s | 2106 kbps | 深色字标 + 青色瞳孔特写 |
 
 ## 安装
 
@@ -16,7 +24,7 @@ dsh plugin --profile desktop add github:muning0214/dsh-custom-splash
 
 ## 特性
 
-- **随机播放**：`assets/` 下三段视频，每次加载（= 每次重启）用 Fisher–Yates 洗牌取一段
+- **随机播放**：上面三段，每次加载（= 每次重启）用 Fisher–Yates 洗牌取一段
 - **随时跳过**：`Esc` 或点击画面；播完自动淡出
 - **隐藏标题栏按钮**：Windows 右上角那三个按钮是系统画的，CSS 盖不住，这里改成让它们融进画面
 - **实时锐化**：SVG `feConvolveMatrix` 补偿低码率源的糊感，可在 `index.mjs` 里调强度
