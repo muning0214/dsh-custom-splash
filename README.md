@@ -8,9 +8,9 @@
 
 | 文件 | 时长 | 码率 | 画面 |
 |---|---|---|---|
-| `assets/clip-1.mp4` | 8.06s | 2659 kbps | 闭眼半身特写，柔光星尘 |
-| `assets/clip-3.mp4` | 7.05s | 2951 kbps | 左侧 DEEPSEEK 大字 + 右侧脸部 + 数据流 |
-| `assets/clip-5.mp4` | 7.05s | 2106 kbps | 深色字标 + 青色瞳孔特写 |
+| `assets/stardust.mp4` | 8.06s | 2659 kbps | 闭眼半身特写，柔光星尘 |
+| `assets/datastream.mp4` | 7.05s | 2951 kbps | 左侧 DEEPSEEK 大字 + 右侧脸部 + 数据流 |
+| `assets/gaze.mp4` | 7.05s | 2106 kbps | 深色字标 + 青色瞳孔特写 |
 
 ## 安装
 
@@ -37,9 +37,9 @@ dsh plugin --profile desktop add github:muning0214/dsh-custom-splash
 
 ```js
 const ASSETS = new Map([
-  ['clip-1.mp4', 'video/mp4'],
-  ['clip-3.mp4', 'video/mp4'],
-  ['clip-5.mp4', 'video/mp4']
+  ['stardust.mp4', 'video/mp4'],
+  ['datastream.mp4', 'video/mp4'],
+  ['gaze.mp4', 'video/mp4']
 ])
 ```
 
@@ -65,10 +65,10 @@ const ASSETS = new Map([
 
 ```js
 ctx.connection.fetch.register({
-  path: '/api/dsh-splash/clip-1.mp4',
+  path: '/api/dsh-splash/stardust.mp4',
   methods: ['GET', 'HEAD'],
   requestBody: 'buffered',
-  fetch: (request) => serveAsset(request, 'clip-1.mp4')
+  fetch: (request) => serveAsset(request, 'stardust.mp4')
 })
 ```
 

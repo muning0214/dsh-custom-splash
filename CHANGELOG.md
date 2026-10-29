@@ -3,6 +3,17 @@
 本项目遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，
 版本号遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [0.2.1] - 2026-10-29
+
+### 变更
+
+- 素材文件改为语义化命名，不再用序号：
+  - `clip-1.mp4` → `stardust.mp4`（柔光星尘 · 闭眼特写）
+  - `clip-3.mp4` → `datastream.mp4`（DEEPSEEK 字标 · 数据流）
+  - `clip-5.mp4` → `gaze.mp4`（字标 · 青色瞳孔特写）
+
+> 升级后请重新安装一次（`remove` + `add`），旧文件名不再被引用。
+
 ## [0.2.0] - 2026-10-29
 
 视频开屏版本。

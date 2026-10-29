@@ -17,9 +17,9 @@ export const inject = ['webServer', 'connection']
 const PREFIX = '/api/dsh-splash/'
 /** 素材文件名 → MIME。只允许读这里列出的文件。 */
 const ASSETS = new Map([
-  ['clip-1.mp4', 'video/mp4'],
-  ['clip-3.mp4', 'video/mp4'],
-  ['clip-5.mp4', 'video/mp4']
+  ['stardust.mp4', 'video/mp4'],
+  ['datastream.mp4', 'video/mp4'],
+  ['gaze.mp4', 'video/mp4']
 ])
 /** 兜底放行时间：无论播到哪，最多遮挡这么久。 */
 const MAX_HOLD = 20000

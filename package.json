@@ -1,6 +1,6 @@
 {
   "name": "dsh-custom-splash",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "DeepSeek Harness 开屏动画插件：随机播放多段视频、Esc 跳过、隐藏 Windows 标题栏按钮、实时锐化",
   "type": "module",
   "main": "./index.mjs",
