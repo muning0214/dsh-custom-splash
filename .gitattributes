@@ -1,0 +1,7 @@
+*.mp4 -text
+*.png -text
+*.jpg -text
+*.mjs text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.md text eol=lf
