@@ -101,6 +101,15 @@ preload 监听 `document.head` 的变动，所以注入一条把该探针改成 
 - 只在 **Windows 桌面版**验证过；macOS / Linux 上标题栏处理会跳过，其余功能照常
 - 三段的时长不一致（8.06s / 7.05s / 7.05s），所以开屏时长会略有浮动
 
+## 参考
+
+本项目的思路参考了下面两个项目，特此致谢：
+
+- **[Yiheng-guo/dsh-boot-animation-pro](https://github.com/Yiheng-guo/dsh-boot-animation-pro)** —— 功能完整的开屏插件，有播放控制、触发规则、片库管理、画面特效和分时段片头。也是「不动安装包、只走宿主扩展点」这条路线的现成范本
+- **[NativeDog1/dsh-boot-animation](https://github.com/NativeDog1/dsh-boot-animation)** —— 上面那个项目的原版，BSD-3-Clause
+
+代码是独立写的，没有基于这两个仓库 fork；参考的是思路与实现路线。
+
 ## 素材来源与许可
 
 代码以 **MIT** 发布。
