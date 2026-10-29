@@ -7,7 +7,7 @@
 ## 安装
 
 ```sh
-dsh plugin --profile desktop add github:OWNER/dsh-custom-splash
+dsh plugin --profile desktop add github:muning0214/dsh-custom-splash
 ```
 
 - 桌面版用 `--profile desktop`，Web 版用 `--profile web`
