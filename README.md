@@ -103,10 +103,10 @@ preload 监听 `document.head` 的变动，所以注入一条把该探针改成 
 
 ## 参考
 
-本项目的思路参考了下面两个项目，特此致谢：
+本项目的思路同时参考了下面两个项目，特此致谢：
 
-- **[Yiheng-guo/dsh-boot-animation-pro](https://github.com/Yiheng-guo/dsh-boot-animation-pro)** —— 功能完整的开屏插件，有播放控制、触发规则、片库管理、画面特效和分时段片头。也是「不动安装包、只走宿主扩展点」这条路线的现成范本
-- **[NativeDog1/dsh-boot-animation](https://github.com/NativeDog1/dsh-boot-animation)** —— 上面那个项目的原版，BSD-3-Clause
+- **[NativeDog1/dsh-boot-animation](https://github.com/NativeDog1/dsh-boot-animation)** —— **原始项目**，DSH 开机动画的最初实现，BSD-3-Clause。这个插件后来所有的变体都是从它长出来的
+- **[Yiheng-guo/dsh-boot-animation-pro](https://github.com/Yiheng-guo/dsh-boot-animation-pro)** —— 上面那个项目的**二次开发版**，补了播放控制、触发规则、片库管理、画面特效和分时段片头，功能最完整
 
 代码是独立写的，没有基于这两个仓库 fork；参考的是思路与实现路线。
 
